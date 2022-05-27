@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@windmill/react-ui";
 import { ImFacebook, ImGoogle } from "react-icons/im";
 
-import ImageLight from "../assets/img/login-office.jpeg";
-import ImageDark from "../assets/img/login-office-dark.jpeg";
-import useLoginSubmit from "../hooks/useLoginSubmit";
 import Error from "../components/form/Error";
 import LabelArea from "../components/form/LabelArea";
 import InputArea from "../components/form/InputArea";
+import ImageLight from "../assets/img/login-office.jpeg";
+import ImageDark from "../assets/img/login-office-dark.jpeg";
+import useLoginSubmit from "../hooks/useLoginSubmit";
 
 const Login = () => {
   const { onSubmit, register, handleSubmit, errors, loading } =
@@ -97,7 +97,7 @@ const Login = () => {
                 <p className="mt-1">
                   <Link
                     className="text-sm font-medium text-green-500 dark:text-green-400 hover:underline"
-                    to="/singup"
+                    to="/signup"
                   >
                     Create account
                   </Link>

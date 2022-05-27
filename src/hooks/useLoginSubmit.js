@@ -2,11 +2,11 @@ import Cookies from "js-cookie";
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
-import { notifyError, notifySuccess } from "../utils/toast";
 import { AdminContext } from "../context/AdminContext";
 import AdminServices from "../services/AdminServices";
+import { notifyError, notifySuccess } from "../utils/toast";
 
-const UserLoginSubmit = () => {
+const useLoginSubmit = () => {
   const [loading, setLoading] = useState(false);
   const { dispatch } = useContext(AdminContext);
   const history = useHistory();
@@ -61,7 +61,6 @@ const UserLoginSubmit = () => {
         });
     }
   };
-
   return {
     onSubmit,
     register,
@@ -71,4 +70,4 @@ const UserLoginSubmit = () => {
   };
 };
 
-export default UserLoginSubmit;
+export default useLoginSubmit;
