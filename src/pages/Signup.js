@@ -11,7 +11,7 @@ import useLoginSubmit from "../hooks/useLoginSubmit";
 import ImageLight from "../assets/img/create-account-office.jpeg";
 import ImageDark from "../assets/img/create-account-office-dark.jpeg";
 
-const SignUp = () => {
+const Signup = () => {
   const { onSubmit, register, handleSubmit, errors, loading } =
     useLoginSubmit();
 
@@ -126,4 +126,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Signup;

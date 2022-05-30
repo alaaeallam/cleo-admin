@@ -11,7 +11,7 @@ import AccessibleNavigationAnnouncer from "./components/AccessibleNavigationAnno
 
 const Layout = lazy(() => import("./layout/Layout"));
 const Login = lazy(() => import("./pages/Login"));
-const Singup = lazy(() => import("./pages/Singup"));
+const Signup = lazy(() => import("./pages/Signup"));
 const ForgotPassword = lazy(() => import("./pages/ForgotPassword"));
 const ResetPassword = lazy(() => import("./pages/ResetPassword"));
 
@@ -23,7 +23,7 @@ const App = () => {
         <AccessibleNavigationAnnouncer />
         <Switch>
           <Route path="/login" component={Login} />
-          <Route path="/singup" component={Singup} />
+          <Route path="/signup" component={Signup} />
           <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/reset-password/:token" component={ResetPassword} />
 
